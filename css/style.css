@@ -1,0 +1,64 @@
+:root{
+    --red-color: #ff3946;
+    --font-color: #464e90;
+}
+
+
+li a{
+    text-decoration: none;
+}
+
+
+
+
+/* start navbar */
+.container{
+    position: relative;
+}
+.nav .container .logo img{
+    width: 80px;
+}
+.nav .container ul li{
+    margin-left: 25px;
+}
+.nav .container ul li a{
+    color: var(--font-color);
+}
+.btn-contact{
+    color: var(--red-color);
+}
+.nav .right-content{
+    cursor: pointer;
+    color: var(--font-color);
+}
+@media (max-width: 992px) {
+    
+    .navitem{
+        position: absolute;
+        flex-direction: column;
+        top: calc(100% + 20px);
+    }
+    .btn-contact{
+        position: absolute;
+        top: 145%;
+        right: 5px;
+    }
+    .nav .container .navitem{
+        clip-path: inset(0 0 100% 0);
+        transition: .3s;
+    }
+    .nav .container .btn-contact{
+        clip-path: inset(0 0 100% 0);
+        transition: .3s;
+    }
+    .nav .container .navitem.active{
+        clip-path: inset(0 0 0% 0);
+        transition: .3s;
+    }
+    .nav .container .btn-contact.active{
+        clip-path: inset(0 0 0% 0);
+        transition: .3s;
+    }
+   
+}
+/* End navbar */
