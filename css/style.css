@@ -4,11 +4,15 @@
     --main-transition: .3s;
 }
 
-
 li a{
     text-decoration: none;
 }
-
+.form-btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
 .main-btn{
     background-color: var(--red-color);
     text-decoration: none;
@@ -21,8 +25,11 @@ li a{
 .get{
     text-decoration: none;
     color: var(--font-color);
+    transition: var(--main-transition);
 }
-
+.get:hover{
+    color: var(--red-color);
+}
 
 /* start navbar */
 .container{
@@ -115,3 +122,132 @@ li a{
     
 }
 /* End landing */
+/* start features */
+.features .text-feat h1{
+    color: var(--font-color);
+}
+.content-box{
+    padding: 45px 30px;
+    color: var(--font-color);
+}
+.content-box p{
+    font-size: 14px;
+}
+.content-box .feat-icon{
+    color: var(--red-color);
+    font-size: 45px;
+}
+/* End features */
+/* start company */
+.company{
+    color: var(--font-color);
+    padding: 150px 0;
+}
+
+.company .content p{
+    font-size: 14px;
+}
+ span.our{
+    color: var(--red-color);
+    font-size: 12px;
+}
+/* End company */
+/* start portofolio */
+.portofolio{
+    padding: 40px 0 150px;
+}
+.container-custem{
+    width: 65%;
+    margin: 0 auto;
+}
+@media (min-width: 1300px) {
+    .container-custem{
+        width: 55%;
+    }    
+}
+.container-custem h2{
+    color: var(--font-color);
+}
+@media (max-width: 767px) {
+    .container-custem{
+        width: 85%;
+    }
+    
+}
+.see-btn{
+    color: var(--red-color);
+    text-decoration: none;
+    transform: translateX(-50%);
+    
+}
+/* End portofolio */
+/* start blogs */
+.our-news p{
+    font-size: 14px;
+    
+}
+.our-news{
+    color: var(--font-color);
+
+}
+.our-news .blog-icon{
+    color: var(--red-color);
+    bottom: 20px;
+    right: 30px;
+    
+}
+.our-news .date{
+    font-size: 13px;
+    padding: 10px 0 25px;
+    display: inline-block;
+    color: #999;
+}
+
+.our-news .content:hover{
+    cursor: pointer;
+    transition: var(--main-transition);
+    background-color: var(--red-color);
+    color: #fff;
+}
+.our-news .content:hover .date{
+    color: #fff;
+}
+.our-news .content:hover .blog-icon{
+    color: #fff;
+}
+/* End blogs */
+/* start form  */
+.form{
+    color: var(--font-color);
+    padding: 40px 0 150px;
+}
+.form .input input::placeholder{
+    color: var(--font-color);
+    font-weight: bold;
+
+}
+.form .input input{
+    border: none;
+    background-color: #f4fafe;
+    outline: none;
+}
+/* End form  */
+/* start footer  */
+.footer{
+    padding: 30px 0 20px;
+    background-color: var(--font-color);
+}
+.footer h2{
+    color: var(--red-color);
+}
+.name{
+    color: var(--red-color);
+}
+.social-icon i{
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.social-icon i:hover{
+    color: var(--red-color);
+}
+/* End footer  */
