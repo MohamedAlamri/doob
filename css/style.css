@@ -3,7 +3,9 @@
     --font-color: #464e90;
     --main-transition: .3s;
 }
-
+body, html{
+    overflow-x: hidden;
+}
 li a{
     text-decoration: none;
 }
