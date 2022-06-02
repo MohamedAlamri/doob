@@ -1,6 +1,7 @@
 :root{
     --red-color: #ff3946;
     --font-color: #464e90;
+    --main-transition: .3s;
 }
 
 
@@ -8,7 +9,19 @@ li a{
     text-decoration: none;
 }
 
-
+.main-btn{
+    background-color: var(--red-color);
+    text-decoration: none;
+    transition: var(--main-transition);
+}
+.main-btn:hover{
+    color: var(--red-color);
+    background-color: var(--font-color);
+}
+.get{
+    text-decoration: none;
+    color: var(--font-color);
+}
 
 
 /* start navbar */
@@ -31,21 +44,28 @@ li a{
     cursor: pointer;
     color: var(--font-color);
 }
+.nav .right-content .lan:hover{
+    color: var(--red-color);
+    transition: var(--main-transition);
+}
 @media (max-width: 992px) {
     
     .navitem{
         position: absolute;
         flex-direction: column;
         top: calc(100% + 20px);
+        z-index: 100;
     }
     .btn-contact{
         position: absolute;
         top: 145%;
         right: 5px;
+        z-index: 8000;
     }
     .nav .container .navitem{
         clip-path: inset(0 0 100% 0);
         transition: .3s;
+        width: 100%;
     }
     .nav .container .btn-contact{
         clip-path: inset(0 0 100% 0);
@@ -61,4 +81,37 @@ li a{
     }
    
 }
+.nav .container ul li a:hover{
+    color: var(--red-color);
+    transition: var(--main-transition);
+}
 /* End navbar */
+/* start landing */
+.landing{
+    padding: 90px 0;
+}
+.landing .title{
+    color: var(--font-color);
+}
+@media (max-width: 767px) {
+    .landing{
+        padding-top: 40px;
+    }
+    
+}
+@media (max-width: 767px) {
+    .landing .content{
+        padding-bottom: 50px;
+    }
+    
+}
+.landing .content .text{
+    width: 85%;
+}
+@media (max-width: 767px) {
+    .landing .content .text{
+        width: 100%;
+    }
+    
+}
+/* End landing */
